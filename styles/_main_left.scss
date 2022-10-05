@@ -1,0 +1,27 @@
+.heading {
+    grid-area: 5 / 1 / 11 / 5;
+    background-color: antiquewhite;
+
+    &__h1 {
+        @extend %variables;
+        grid-area: 5 / 1 / 6 / 5;
+        font-weight: 500;
+        font-size: 84px;
+        line-height: 102px;
+        letter-spacing: -2px;
+    }
+
+    &__p {
+        @extend %variables;
+        grid-area: 6 / 1 / 11 / 4;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+
+%variables {
+    font-family: variables.$heading_font;
+    color: variables.$color;
+}

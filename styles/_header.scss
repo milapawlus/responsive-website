@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 60px;
+    background-color: rgb(35, 146, 74);
+    width: 1200px;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    grid-area: 2 / 1 / 3 / 5;
+    background-color: rgb(32, 100, 159);
+
+    &__logo {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    &__links {
+        grid-area: 2 / 3 / 3 / 5;
+    }
+
+    &__links li {
+        display: inline;
+        padding: 20px;
+    }
+
+    &__links a {
+        text-decoration: none;
+        font-family: variables.$nav_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF
+    }
+}
