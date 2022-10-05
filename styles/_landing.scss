@@ -125,6 +125,12 @@
     }
 }
 
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+    }
+}
+
 // @media screen and (min-width: 1440px) {
 //     .container__right img {
 //         background-image: url('../images/desktop_image.svg');
