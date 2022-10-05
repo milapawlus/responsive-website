@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-    <title>Home</title>
+    <title>HOME</title>
 </head>
 <body>
     <div class="container">
-        <nav class="nav">
-            <a class="nav__logo" href="/index.html"><img src="images/desktop_Logo.svg" alt="logo"></a>
-            <div class="nav__links">
-                <ul>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
+        <div class="container__left">
+            <nav class="container__left__nav">
+                <a class="container__left__nav__logo" href="/index.html"><img src="images/desktop_Logo.svg" alt="logo"></a>
+                <div class="container__left__nav__links">
+                    <ul>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container__left__heading">
+                <h1 class="container__left__heading__h1">Musician</h1>
+                <p class="container__left__heading__p">Fusce vehicula dolor arcu, sit amet blandit
+                    dolor mollis nec. Donec viverra eleifend lacus, vitae ullamocor.
+                </p>
             </div>
-        </nav>
-
-        <div class="heading">
-            <h1 class="heading__h1">Musician</h1>
-            <p class="heading__p">Fusce vehicula dolor arcu, sit amet blandit
-                dolor mollis nec. Donec viverra eleifend lacus, vitae ullamocor.
-            </p>
         </div>
-
-        <div class="image">
-            <img src="images/desktop_image.svg" alt="African man face">
+        <div class="container__right">
+            <picture>
+                <source class="container__right__desktop" media="(min-width: 1440px)" srcset="images/desktop_image.svg">
+                <source class="container__right__tablet" media="(max-width: 768px)" srcset="images/tablet_image.svg">
+                <source class="container__right__mobile" media="(max-width: 320px)" srcset="images/mobile_image.svg">
+                <img src="images/desktop_image.svg" alt="African man face">
+            </picture>
+            <!-- <img src="images/desktop_image.svg" alt="African man face"> -->
         </div>
     </div>
 </body>
